@@ -35,7 +35,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/user/contact",
+        "https://hospital-5z8n.onrender.com/api/v1/user/contact",
         formData
       );
       if (response?.data) {

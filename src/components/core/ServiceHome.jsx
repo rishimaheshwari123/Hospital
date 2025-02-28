@@ -3,8 +3,14 @@ import { FaArrowRight } from "react-icons/fa";
 import s1 from "@/assets/s1.avif";
 import s2 from "@/assets/s2.avif";
 import s3 from "@/assets/s3.avif";
+import s4 from "@/assets/s4.jpg";
+import s5 from "@/assets/s5.jpg";
+import s6 from "@/assets/s6.jpg";
+import s7 from "@/assets/s7.jpg";
+import s8 from "@/assets/s8.jpg";
+import s9 from "@/assets/s9.jpg";
+import s10 from "@/assets/s10.jpg";
 import Link from "next/link";
-
 const treatments = [
   {
     title: "Same Day  Cardiovascular Care and Walk-Ins",
@@ -17,6 +23,32 @@ const treatments = [
   {
     title: "Cardiac and Vascular CT Scans",
     image: s3,
+  },
+  {
+    title: "Cardiac Stress Testing",
+    image: s4,
+  },
+  {
+    title: "Cardiac Arrhythmia Detection Services",
+    image: s5,
+  },
+  {
+    title: "Advanced Cardiac Care Center",
+    image: s6,
+  },
+  {
+    title: "Venous Disease Therapies",
+    image: s7,
+  },
+  {
+    title: "Outpatient Cath Lab Services",
+    image: s8,
+  },
+  { title: "Internal Device Placement", image: s9 },
+
+  {
+    title: "Hospital Based Procedures",
+    image: s10,
   },
 ];
 
@@ -38,6 +70,7 @@ const ServiceHome = () => {
           health with expertise and dedication.
         </p>
       </div>
+
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-x-6 gap-y-12">
         {treatments.map((treatment, index) => (
           <div key={index} className="relative bg-white rounded-xl shadow-lg ">
@@ -51,22 +84,16 @@ const ServiceHome = () => {
             {/* Overlay Content */}
             <div className="absolute -bottom-8 left-1/2 h-32 -translate-x-1/2 bg-white p-3 rounded-md text-center shadow-md w-[80%]">
               <h2 className="text-lg font-semibold">{treatment.title}</h2>
-              <button className="mt-2 flex mx-auto items-center justify-center gap-2 bg-[#00BFB3] text-white px-4 py-2 rounded-md hover:bg-[#00a69b] transition">
+              <Link
+                href={"/services"}
+                className="mt-2 flex mx-auto items-center justify-center gap-2 bg-[#00BFB3] text-white px-4 py-2 rounded-md hover:bg-[#00a69b] transition"
+              >
                 Learn More <FaArrowRight />
-              </button>
+              </Link>
             </div>
           </div>
         ))}
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <Link href="/services">
-        <button className="bg-[#00BFB3] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-[#00a69b] transition flex items-center justify-center mx-auto">
-          More Services <FaArrowRight className="ml-2" />
-        </button>
-      </Link>{" "}
       <br />
       <br />
       <br />

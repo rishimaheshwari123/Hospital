@@ -17,3 +17,21 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+export const generateMetadata = () => {
+  return {
+    title: "Orlando Heart & Vascular",
+    description: "Orlando Heart & Vascular",
+    keywords: "Orlando Heart & Vascular",
+    url: "https://www.heartorlando.com",
+    image: "/android-chrome-192x192.png",
+
+    // Open Graph Tags
+    openGraph: {
+      type: "website",
+      url: "Orlando Heart & Vascular",
+      title: "Orlando Heart & Vascular",
+      description: "Orlando Heart & Vascular",
+      image: "/android-chrome-192x192.png",
+    },
+  };
+};

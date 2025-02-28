@@ -24,7 +24,7 @@ const InsurancePlans = () => {
         </p>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-4 mt-6">
+        <div className="flex justify-center flex-wrap gap-4 mt-6">
           <button
             className={`px-6 py-2 rounded-full text-lg font-semibold transition ${
               active === "shop"

@@ -25,7 +25,7 @@ const Navbar = () => {
       className={`transition-all duration-300 z-50 bg-white  ${
         isScrolled
           ? "fixed top-0 left-0 right-0 w-full shadow-lg"
-          : "max-w-[90%] mx-auto fixed top-12 left-0 right-0 rounded-lg"
+          : "max-w-[92%] mx-auto fixed top-12 left-0 right-0 rounded-lg"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6  py-2">
@@ -69,31 +69,31 @@ const Navbar = () => {
                     icon="🩺"
                     title="Interventional Cardiology"
                     description="Interventional Cardiology is a branch of cardiology that focuses on diagnosing and treating cardiovascular diseases using catheter-based techniques"
-                    href="/test"
+                    href="/interventional-cardiology"
                   />
                   <ServiceCard
                     icon="🦵"
                     title="Diagnostic Services"
                     description="Diagnostic services in cardiology involve non-invasive and minimally invasive tests that allow us to evaluate your heart's condition."
-                    href="/test"
+                    href="/copy-of-interventional-cardiology"
                   />
                   <ServiceCard
                     icon="❤️"
                     title="Patient Education"
                     description="Understanding your heart health is crucial to making the right choices for your well-being. Through patient education, we provide you with"
-                    href="/test"
+                    href="/copy-of-diagnostic-services"
                   />
                   <ServiceCard
                     icon="❤️"
                     title="Preventive Cardiology"
                     description="Preventive care focuses on identifying and managing risk factors before they lead to serious heart conditions. This proactive approach helps you maintain optimal heart health and avoid potentially life-threatening events such as heart attacks, strokes, and heart failure."
-                    href="/test"
+                    href="/copy-of-patient-education"
                   />
                   <ServiceCard
                     icon="❤️"
                     title="Telehealth Services "
                     description="Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms. This technology ensures that you receive high-quality medical care from the comfort and safety of your home, especially if you're managing a chronic condition, have mobility issues, or are looking to avoid unnecessary trips to the clinic."
-                    href="/test"
+                    href="/copy-of-patient-education-1"
                   />
                 </div>
               </div>
@@ -107,19 +107,24 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex items-center gap-2 text-gray-700">
               <FiPhone className="w-5 h-5" />
-              <span className="font-medium">(407) 767-8554</span>
+              <a href="tel:4077678554" className="font-medium">
+                (407) 767-8554
+              </a>
             </div>
             <div className="flex gap-4">
-              <button className="bg-[#00BFB3] text-white px-6 py-2.5 rounded-md hover:bg-[#00a69b] transition-colors font-medium">
+              <Link
+                href={"/appointment"}
+                className="bg-[#00BFB3] text-white px-6 py-2.5 rounded-md hover:bg-[#00a69b] transition-colors font-medium"
+              >
                 Schedule an Appointment
-              </button>
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <ul className="lg:hidden absolute top-10 left-0 w-full bg-white z-50 shadow-lg p-6 max-h-[80vh] overflow-y-auto">
+          <ul className="lg:hidden absolute top-20 left-0 w-full bg-white z-50 shadow-lg p-6 max-h-[80vh] overflow-y-auto">
             <li>
               <Link href="/" className="block py-2">
                 Home
@@ -143,31 +148,31 @@ const Navbar = () => {
                     icon="🩺"
                     title="Interventional Cardiology"
                     description="Interventional Cardiology is a branch of cardiology that focuses on diagnosing and treating cardiovascular diseases using catheter-based techniques"
-                    href="/test"
+                    href="/interventional-cardiology"
                   />
                   <ServiceCard
                     icon="🦵"
                     title="Diagnostic Services"
                     description="Diagnostic services in cardiology involve non-invasive and minimally invasive tests that allow us to evaluate your heart's condition."
-                    href="/test"
+                    href="/copy-of-interventional-cardiology"
                   />
                   <ServiceCard
                     icon="❤️"
                     title="Patient Education"
                     description="Understanding your heart health is crucial to making the right choices for your well-being. Through patient education, we provide you with"
-                    href="/test"
+                    href="/copy-of-diagnostic-services"
                   />
                   <ServiceCard
                     icon="❤️"
                     title="Preventive Cardiology"
                     description="Preventive care focuses on identifying and managing risk factors before they lead to serious heart conditions. This proactive approach helps you maintain optimal heart health and avoid potentially life-threatening events such as heart attacks, strokes, and heart failure."
-                    href="/test"
+                    href="/copy-of-patient-education"
                   />
                   <ServiceCard
                     icon="❤️"
                     title="Telehealth Services "
                     description="Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms. This technology ensures that you receive high-quality medical care from the comfort and safety of your home, especially if you're managing a chronic condition, have mobility issues, or are looking to avoid unnecessary trips to the clinic."
-                    href="/test"
+                    href="/copy-of-patient-education-1"
                   />
                 </div>
               )}
@@ -180,14 +185,19 @@ const Navbar = () => {
             <li>
               <div className="flex items-center gap-2 my-2">
                 <FiPhone className="w-5 h-5" />
-                <span className="font-medium">(407) 767-8554</span>
+                <span href="tel:4077678554" className="font-medium">
+                  (407) 767-8554
+                </span>
               </div>
             </li>
 
             <div className="flex gap-4">
-              <button className="bg-[#00BFB3] text-white px-6 py-2.5 rounded-md hover:bg-[#00a69b] transition-colors font-medium">
+              <Link
+                href={"/appointment"}
+                className="bg-[#00BFB3] text-white px-6 py-2.5 rounded-md hover:bg-[#00a69b] transition-colors font-medium"
+              >
                 Schedule an Appointment
-              </button>
+              </Link>
             </div>
           </ul>
         )}

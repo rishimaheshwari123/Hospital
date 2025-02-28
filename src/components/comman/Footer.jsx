@@ -46,7 +46,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-white">
+              <Link href="/cathlab" className="hover:text-white">
                 Cath Lab
               </Link>
             </li>
@@ -56,14 +56,12 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Get in touch</h3>
           <p className="flex items-center gap-2 text-white">
-            <FaWhatsapp /> (407)-767-9121
+            <FaPhoneAlt /> (407)-767-9121
           </p>
           <p className="flex items-center gap-2 text-white mt-2">
             <FaPhoneAlt /> (407) 767-8554
           </p>
-          <p className="flex items-center gap-2 text-white mt-2">
-            <FaEnvelope /> adityaeventplanner56@gmail.com
-          </p>
+
           <p className="flex items-start gap-2 text-white mt-4">
             <FaMapMarkerAlt className="mt-1" />
             450 W. Central Parkway – Altamonte Springs, FL 32714

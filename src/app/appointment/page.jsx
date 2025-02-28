@@ -10,8 +10,8 @@ const Contact = () => {
     name: "",
     email: "",
     contact: "",
-    subject: "",
     dob: "",
+    subject: "",
     message: "",
   });
   const [isClient, setIsClient] = useState(false);
@@ -35,7 +35,8 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://hospital-5z8n.onrender.com/api/v1/user/contact",
+        "http://localhost:8080/api/v1/contact/send",
+        // "https://hospital-5z8n.onrender.com/api/v1/contact/send",
         formData
       );
       if (response?.data) {
@@ -54,6 +55,7 @@ const Contact = () => {
         message: "",
       });
     } catch (error) {
+      console.log(error);
       Swal.fire({
         title: "Error!",
         text: "Failed to send message. Try again later.",
@@ -85,12 +87,7 @@ const Contact = () => {
               33 S. Washington Avenue, Apopka, FL 32703
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="p-3 bg-[#00BFB3] text-white rounded-full text-xl">
-              <MdEmail />
-            </span>
-            <span className="text-gray-700">info.inextets@gmail.com</span>
-          </div>
+
           <div className="flex items-center gap-4">
             <span className="p-3 bg-[#00BFB3] text-white rounded-full text-xl">
               <FaPhone />
@@ -143,14 +140,20 @@ const Contact = () => {
               className="p-3 border rounded-md outline-none focus:border-[#00BFB3]"
             />
           </div>
-          <input
-            type="date"
-            placeholder="Date of Birth"
-            name="dob"
-            value={formData.dob}
-            onChange={handleChange}
-            className="p-3 border rounded-md outline-none focus:border-[#00BFB3] w-full mt-4"
-          />
+
+          <div className="w-full mt-4">
+            <label htmlFor="dob" className="block text-black font-medium">
+              Date of Birth
+            </label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              value={formData.dob}
+              onChange={handleChange}
+              className="p-3 border rounded-md outline-none focus:border-[#00BFB3] w-full mt-1"
+            />
+          </div>
           <textarea
             placeholder="Message"
             name="message"

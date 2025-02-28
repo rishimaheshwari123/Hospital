@@ -1,10 +1,10 @@
-const eventContactEmail = (name, email, contact, dob, priceCategory, price, size) => {
+const eventContactEmail = (name, email, contact, subject, dob, message) => {
     return `<!DOCTYPE html>
     <html>
     
     <head>
         <meta charset="UTF-8">
-        <title>Fitness Fair Registration Confirmation</title>
+        <title>Appointment Confirmation</title>
         <style>
             body {
                 background-color: #f4f4f4;
@@ -75,26 +75,24 @@ const eventContactEmail = (name, email, contact, dob, priceCategory, price, size
                 margin-top: 20px;
             }
         </style>
-    
     </head>
     
     <body>
         <div class="container">
-            <a href="http://fitnessexpo.in">
-                <img class="logo" src="https://i.ibb.co/SwvtByLP/logo.png" alt="Fitness Fair Logo">
+            <a href="https://www.heartorlando.com">
+                <img class="logo" src="https://i.ibb.co/mV86tKnp/logo.png" alt="Appointment Logo">
             </a>
-            <div class="message">New Fitness Fair Registration</div>
+            <div class="message">New Appointment Request</div>
             <div class="body">
-                <p>Dear <span class="highlight">Fitness Fair Team</span>,</p>
+                <p>Dear <span class="highlight">Team</span>,</p>
                 <div class="info">
-                    <p>You have received a new registration for the Fitness Fair event:</p>
+                    <p>You have received a new appointment request:</p>
                     <p><span class="highlight">Name:</span> ${name}</p>
                     <p><span class="highlight">Email:</span> ${email}</p>
                     <p><span class="highlight">Contact Number:</span> ${contact}</p>
+                    <p><span class="highlight">Subject:</span> ${subject}</p>
                     <p><span class="highlight">Date of Birth:</span> ${dob}</p>
-                    <p><span class="highlight">Selected Category:</span> ${priceCategory}</p>
-                    <p><span class="highlight">Price :</span> ${price}</p>
-                    <p><span class="highlight">T-shirt size:</span> ${size}</p>
+                    <p><span class="highlight">Message:</span> ${message}</p>
                 </div>
             </div>
             <a href="mailto:${email}" class="cta">Reply to ${name}</a>
@@ -104,8 +102,7 @@ const eventContactEmail = (name, email, contact, dob, priceCategory, price, size
         </div>
     </body>
     
-    </html>
-    `;
+    </html>`;
 };
 
 module.exports = { eventContactEmail };

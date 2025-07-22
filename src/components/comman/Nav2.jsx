@@ -228,7 +228,7 @@ export const Nav2 = () => {
         animate="visible"
         variants={containerVariants}
         className={cn(
-          "fixed top-0 md:top-11 left-0 right-0 z-50 transition-all  max-w-[100vw] duration-300",
+          "fixed top-0 md:top-10 left-0 right-0 z-50 transition-all  max-w-[100vw] duration-300",
           isScrolled
             ? "bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50"
             : "bg-white/90 backdrop-blur-sm"
@@ -375,7 +375,7 @@ export const Nav2 = () => {
                           >
                             <div className="flex items-start space-x-3">
                               <motion.div
-                                className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-cyan-400 to-white rounded-lg flex items-center justify-center text-white"
+                                className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-red-500 to-white rounded-lg flex items-center justify-center text-white"
                                 whileHover={{ scale: 1.1, rotate: 5 }}
                                 transition={{
                                   type: "spring",

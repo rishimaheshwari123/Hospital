@@ -228,10 +228,10 @@ export const Nav2 = () => {
         animate="visible"
         variants={containerVariants}
         className={cn(
-          "fixed top-0 md:top-10 left-0 right-0 z-50 transition-all  max-w-[100vw] duration-300",
+          "fixed top-0 md:top-11 left-0 right-0 z-50 transition-all  max-w-[100vw] duration-300",
           isScrolled
             ? "bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50"
-            : "bg-white/90 backdrop-blur-sm"
+            : "bg-white/80 backdrop-blur-sm max-w-[95vw] mx-auto rounded-lg"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

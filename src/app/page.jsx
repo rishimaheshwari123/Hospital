@@ -6,6 +6,7 @@ import Service from "@/components/core/Service";
 import ServiceHome from "@/components/core/ServiceHome";
 import Symtomps from "@/components/core/Symtomps";
 import WhyChooseUs from "@/components/core/WhyChooseUs";
+import Review from "@/components/Review";
 import React from "react";
 
 const page = () => {
@@ -15,6 +16,7 @@ const page = () => {
       <ServiceHome />
       <Symtomps />
       <WhyChooseUs />
+      <Review />
       <InsurancePlans />
       <CardSection />
       <Client />

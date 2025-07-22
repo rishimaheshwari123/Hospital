@@ -1,4 +1,4 @@
-export default function WhyChooseUs() {
+const WhyChooseUs = () => {
   return (
     <section
       className="relative bg-cover bg-center text-white py-20"
@@ -52,4 +52,6 @@ export default function WhyChooseUs() {
       </div>
     </section>
   );
-}
+};
+
+export default WhyChooseUs;

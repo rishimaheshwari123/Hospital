@@ -1,7 +1,7 @@
 export default function SubNavbar() {
   return (
-    <div className="fixed top-1 left-0 right-0 z-50">
-      <div className="max-w-[94%] mx-auto flex flex-wrap justify-between items-center px-4">
+    <div className="fixed bg-white/90 backdrop-blur-sm top-0 left-0 right-0 z-50">
+      <div className="max-w-[94%] mx-auto flex flex-wrap justify-between items-center px-4 py-1">
         {/* Addresses */}
         <div className="flex flex-col md:flex-row gap-2 md:gap-6">
           <a

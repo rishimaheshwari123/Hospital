@@ -1,7 +1,8 @@
-import Navbar from "@/components/comman/Navbar";
+// import Navbar from "@/components/comman/Navbar";
 import "./globals.css";
 import SubNavbar from "@/components/comman/SubNav";
 import Footer from "@/components/comman/Footer";
+import { Nav2 } from "@/components/comman/Nav2";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,8 +11,9 @@ export default function RootLayout({ children }) {
         <div className="hidden lg:block">
           <SubNavbar />
         </div>
-        <Navbar />
-        {children}
+        {/* <Navbar /> */}
+        <Nav2 />
+        <div className=" mt-16 md:mt-28">{children}</div>
         <Footer />
       </body>
     </html>

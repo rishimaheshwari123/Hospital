@@ -10,6 +10,8 @@ import s7 from "@/assets/s7.jpg";
 import s8 from "@/assets/s8.jpg";
 import s9 from "@/assets/s9.jpg";
 import s10 from "@/assets/s10.jpg";
+import s11 from "@/assets/s11.png";
+import s12 from "@/assets/s12.jpg";
 import Link from "next/link";
 const treatments = [
   {
@@ -49,6 +51,14 @@ const treatments = [
   {
     title: "Hospital Based Procedures",
     image: s10,
+  },
+  {
+    title: "Remote Patient Monitoring ",
+    image: s11,
+  },
+  {
+    title: "CCM & PCM ",
+    image: s12,
   },
 ];
 

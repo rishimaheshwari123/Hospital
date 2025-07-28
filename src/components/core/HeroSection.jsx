@@ -27,7 +27,7 @@ const HeroSection = () => {
           </p>
           <div className="mt-14 flex flex-col lg:flex-row gap-2">
             <Link
-              href={"/appointment"}
+              href={"https://vm.providesupport.com/0gyxfx3vgu2kl0r8e1e9c0m5kz"}
               className="bg-[#00BFB3] text-white text-center px-6 py-2.5 rounded-md hover:bg-[#00a69b] transition-colors font-medium"
             >
               Schedule an Appointment

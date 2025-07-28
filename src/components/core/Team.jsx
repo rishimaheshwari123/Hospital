@@ -27,7 +27,7 @@ const teamMembers = [
     image: doctor2,
   },
   {
-    name: "Dr. Udit Joshi, MD, FAC",
+    name: "Dr. Udit Joshi, MD, FACC",
     role: "",
     certifications: [
       "Board Certified in Interventional Cardiology",

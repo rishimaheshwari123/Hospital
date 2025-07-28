@@ -102,13 +102,13 @@ const navItems = [
               "Preventive care focuses on identifying and managing risk factors before they lead to serious heart conditions. This proactive approach helps you maintain optimal heart health .",
             href: "/copy-of-patient-education",
           },
-          {
-            title: "Telehealth Services",
-            icon: <Video className="w-5 h-5" />,
-            description:
-              "Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms. ",
-            href: "/copy-of-patient-education-1",
-          },
+          // {
+          //   title: "Telehealth Services",
+          //   icon: <Video className="w-5 h-5" />,
+          //   description:
+          //     "Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms. ",
+          //   href: "/copy-of-patient-education-1",
+          // },
           {
             title: "RPM, CCM, PCM Services",
             icon: <FaHeartbeat className="w-5 h-5 " />,
@@ -323,7 +323,9 @@ export const Nav2 = () => {
               >
                 <div className="flex gap-4">
                   <Link
-                    href={"/appointment"}
+                    href={
+                      "https://vm.providesupport.com/0gyxfx3vgu2kl0r8e1e9c0m5kz"
+                    }
                     className="bg-[#00BFB3] text-white px-6 py-2.5 rounded-md hover:bg-[#00a69b] transition-colors font-medium"
                   >
                     Schedule an Appointment

@@ -46,27 +46,50 @@ const navItems = [
     megaMenuContent: [
       {
         title: "Core Services",
+        // categories: [
+        //   {
+        //     title: "Interventional Cardiology",
+        //     icon: <FileText className="w-5 h-5" />,
+        //     description:
+        //       "Interventional Cardiology is a branch of cardiology that focuses on diagnosing and treating cardiovascular diseases using catheter-based techniques",
+        //     href: "/interventional-cardiology",
+        //   },
+        //   {
+        //     title: "Diagnostic Services",
+        //     icon: <Activity className="w-5 h-5" />,
+        //     description:
+        //       "Diagnostic services in cardiology involve non-invasive and minimally invasive tests that allow us to evaluate your heart's condition",
+        //     href: "/copy-of-interventional-cardiology",
+        //   },
+        //   {
+        //     title: "Patient Education",
+        //     icon: <Shield className="w-5 h-5" />,
+        //     description:
+        //       "Understanding your heart health is crucial to making the right choices for your well-being. Through patient education, we provide you with",
+        //     href: "/copy-of-diagnostic-services",
+        //   },
+        // ],
         categories: [
           {
-            title: "Interventional Cardiology",
+            title: "Advanced Cardiac Care Services",
             icon: <FileText className="w-5 h-5" />,
             description:
-              "Interventional Cardiology is a branch of cardiology that focuses on diagnosing and treating cardiovascular diseases using catheter-based techniques",
-            href: "/interventional-cardiology",
+              "Comprehensive, state-of-the-art treatments for heart conditions, including interventional procedures, heart failure management, and preventive cardiac care.",
+            href: "/AdvancedCardiacCareServices",
           },
           {
-            title: "Diagnostic Services",
+            title: "Arterial, Venous & Lymphatic Disease Care & Treatments",
             icon: <Activity className="w-5 h-5" />,
             description:
-              "Diagnostic services in cardiology involve non-invasive and minimally invasive tests that allow us to evaluate your heart's condition",
-            href: "/copy-of-interventional-cardiology",
+              "Expert diagnosis and treatment of artery, vein, and lymphatic system disorders, including varicose veins, DVT, and peripheral artery disease.",
+            href: "/ArterialVenous",
           },
           {
-            title: "Patient Education",
+            title: "In-Office Advanced Treatments & Diagnostic Imaging",
             icon: <Shield className="w-5 h-5" />,
             description:
-              "Understanding your heart health is crucial to making the right choices for your well-being. Through patient education, we provide you with",
-            href: "/copy-of-diagnostic-services",
+              "Convenient access to advanced diagnostic imaging and minimally invasive procedures performed right in our office for faster, more accurate care.",
+            href: "/InOfficeAdvanced",
           },
         ],
       },

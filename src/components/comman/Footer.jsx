@@ -115,10 +115,10 @@ const Footer = () => {
           </h3>
           <div className="space-y-3">
             <p className="flex items-center gap-3 justify-center md:justify-start">
-              <FaPhoneAlt className="text-xl" /> (407)-767-9121
+              <FaPhoneAlt className="text-xl" /> (407) 767-8554
             </p>
             <p className="flex items-center gap-3 justify-center md:justify-start">
-              <FaFax className="text-xl" /> (407) 767-8554
+              <FaFax className="text-xl" /> (407)-767-9121
             </p>
             {/* <p className="flex items-center gap-3 justify-center md:justify-start">
               <FaEnvelope className="text-xl" /> info@yourcompany.com

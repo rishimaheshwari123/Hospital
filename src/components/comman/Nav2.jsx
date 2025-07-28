@@ -34,6 +34,7 @@ import {
 import Link from "next/link";
 import logo from "@/assets/logo.png";
 import Image from "next/image";
+import { FaHeartbeat } from "react-icons/fa";
 
 const navItems = [
   {
@@ -109,6 +110,13 @@ const navItems = [
             description:
               "Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms. ",
             href: "/copy-of-patient-education-1",
+          },
+          {
+            title: "RPM, CCM, PCM Services",
+            icon: <FaHeartbeat className="w-5 h-5 text-red-600" />,
+            description:
+              "Personalized remote care plans including Remote Patient Monitoring (RPM), Chronic Care Management (CCM), and Principal Care Management (PCM) to proactively manage chronic conditions and improve outcomes.",
+            href: "/rpm-ccm-pcm",
           },
         ],
       },
@@ -254,7 +262,7 @@ export const Nav2 = () => {
           "fixed top-0 md:top-11 left-0 right-0 z-50 transition-all  max-w-[100vw] duration-300",
           isScrolled
             ? "bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50"
-            : "bg-white/80 backdrop-blur-sm max-w-[95vw] mx-auto rounded-lg"
+            : "w-full lg:max-w-[95vw] lg:mx-auto bg-white/80 backdrop-blur-sm rounded-none lg:rounded-lg"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -398,7 +406,7 @@ export const Nav2 = () => {
                           >
                             <div className="flex items-start space-x-3">
                               <motion.div
-                                className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-red-500 to-white rounded-lg flex items-center justify-center text-white"
+                                className="flex-shrink-0 w-10 h-10 bg-red-500 to-white rounded-lg flex items-center justify-center text-white"
                                 whileHover={{ scale: 1.1, rotate: 5 }}
                                 transition={{
                                   type: "spring",

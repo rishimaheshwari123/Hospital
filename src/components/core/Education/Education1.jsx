@@ -2,7 +2,7 @@ import { FaHeartbeat, FaStethoscope } from "react-icons/fa";
 
 export default function Education1() {
   return (
-    <div className="max-w-6xl mx-auto p-8 grid md:grid-cols-2 gap-6">
+    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
       <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-blue-600">
         <div className="flex items-center gap-3 mb-4">
           <FaHeartbeat className="text-3xl text-blue-600" />

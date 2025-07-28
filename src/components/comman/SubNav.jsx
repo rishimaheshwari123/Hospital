@@ -48,7 +48,7 @@ export default function SubNavbar() {
             Patient Portal
           </a>
           <a
-            href="/appointment"
+            href="https://vm.providesupport.com/0gyxfx3vgu2kl0r8e1e9c0m5kz"
             className="bg-[#00BFB3] text-white px-4 py-1 rounded-lg shadow font-semibold"
           >
             Live Chat

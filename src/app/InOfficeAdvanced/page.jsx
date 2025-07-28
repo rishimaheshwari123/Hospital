@@ -1,32 +1,16 @@
 import Image from "next/image";
 import interventionalCardiology from "@/assets/InterventionalCardiology.avif";
 import { Slide } from "react-awesome-reveal";
-// import InterventionalCardiology1 from "@/components/core/InterventionalCardiology/InterventionalCardiology1";
-// import InterventionalCardiology2 from "@/components/core/InterventionalCardiology/InterventionalCardiology2";
-// import InterventionalCardiology3 from "@/components/core/InterventionalCardiology/InterventionalCardiology3";
-
-import { HeartPulse } from "lucide-react"; // Use any suitable icon
-
-const services = [
-  "Echocardiograms",
-  "Cardiac CT Scans - Calcium Score, Coronary CTA, PE Rule Out, Diagnostic Body",
-  "Nuclear Medicine Stress Testing",
-  "PET/CT Scans - Cardiac and Cancer Rule Out",
-  "Holter and Event Monitoring",
-  "Dedicated Device and ICD Clinic with Remote Monitoring",
-  "EECP (Enhanced External Counterpulsation) - A non-invasive treatment for patients with angina or heart failure",
-  "Arterial, Carotid & Venous Ultrasounds",
-];
 
 const InterventionalCardiology = () => {
   return (
-    <div className="bg-[#c2f6f5]">
-      <div className="bg-[#c2f6f5] h-40"></div>
+    <div className="bg-[#c2f6f5] p-5">
+      <div className="bg-[#c2f6f5] h-20 lg:h-40"></div>
       <div className="flex  flex-col max-w-7xl mx-auto md:flex-row items-center justify-between ">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <Slide direction="left">
-            <h1 className="text-5xl font-extrabold text-blue-700">
+            <h1 className="text-3xl lg:text-5xl font-extrabold text-blue-700">
               In-Office Advanced Treatments & Diagnostic Imaging
             </h1>
 
@@ -55,27 +39,13 @@ const InterventionalCardiology = () => {
           </Slide>
         </div>
       </div>
-      <br />
-      <br />
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
-          {services.map((title, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-xl rounded-2xl p-6 flex items-start gap-4 hover:shadow-2xl transition"
-            >
-              <HeartPulse className="text-blue-700 w-8 h-8 flex-shrink-0" />
-              <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-            </div>
-          ))}
-        </div>
-      </div>
+
       <br />
       <br />
       <br />
-      {/* <div className=" flex flex-col  w-full items-center">
+      <div className=" flex flex-col  w-full items-center">
         <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 ">
-          Interventional Cardiology
+          In-Office Advanced Treatments & Diagnostic Imaging
         </h2>
         <br />
         <div className="flex items-center w-[75px]">
@@ -88,11 +58,177 @@ const InterventionalCardiology = () => {
             style={{ backgroundColor: "#cee21a" }}
           ></div>
         </div>
-      </div> */}
+      </div>
+      <br />
+      <br />
 
-      {/* <InterventionalCardiology1 />
-      <InterventionalCardiology2 />
-      <InterventionalCardiology3 /> */}
+      <div className="max-w-6xl mx-auto  grid md:grid-cols-2 gap-6">
+        {/* Echocardiograms */}
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-blue-600">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Echocardiograms
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Non-invasive heart ultrasound used to assess heart structure and
+            function. We offer:
+            <br />
+            <br />
+            Transthoracic and transesophageal echocardiograms (TTE & TEE)
+            <br />
+            Stress echocardiograms (exercise/medication-induced)
+            <br />
+            Real-time valve and chamber evaluations
+            <br />
+            <br />
+            Advanced imaging for accurate diagnosis and personalized care.
+          </p>
+        </div>
+
+        {/* Cardiac CT Scans */}
+        <div className="bg-blue-600 text-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-white">
+          <h2 className="text-2xl font-semibold mb-2">Cardiac CT Scans</h2>
+          <p className="leading-relaxed">
+            Coming soon: advanced CT imaging services including:
+            <br />
+            <br />
+            Calcium Scoring
+            <br />
+            Coronary CT Angiography (CTA)
+            <br />
+            Pulmonary Embolism (PE) Rule Out
+            <br />
+            Diagnostic Body CT Imaging
+            <br />
+            <br />
+            These tools support preventive and diagnostic cardiovascular care.
+          </p>
+        </div>
+
+        {/* Nuclear Medicine Stress Testing */}
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-blue-600">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Nuclear Medicine Stress Testing
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Non-invasive test evaluating blood flow to the heart during rest and
+            stress. We provide:
+            <br />
+            <br />
+            Use of safe radioactive tracer
+            <br />
+            Tailored exercise or medication-induced testing
+            <br />
+            Assessment of blockages and heart performance
+            <br />
+            <br />A critical tool for diagnosing coronary artery disease and
+            guiding treatment.
+          </p>
+        </div>
+
+        {/* Holter and Event Monitoring */}
+        <div className="bg-blue-600 text-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-white">
+          <h2 className="text-2xl font-semibold mb-2">
+            Holter and Event Monitoring
+          </h2>
+          <p className="leading-relaxed">
+            Portable monitors track heart rhythms to detect irregularities. We
+            offer:
+            <br />
+            <br />
+            Holter Monitoring (24–48 hour continuous tracking)
+            <br />
+            Event Monitoring (patient-activated over days/weeks)
+            <br />
+            Expert analysis for accurate diagnosis
+            <br />
+            <br />
+            These tools reveal arrhythmias missed during routine exams.
+          </p>
+        </div>
+
+        {/* Dedicated Device & ICD Clinic */}
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-blue-600">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Dedicated Device & ICD Clinic
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Specialized care for patients with cardiac devices. We provide:
+            <br />
+            <br />
+            Remote and in-person monitoring
+            <br />
+            Routine checks and performance analysis
+            <br />
+            Timely response to device alerts
+            <br />
+            <br />
+            Ensuring safe, effective function of pacemakers, ICDs, and loop
+            recorders.
+          </p>
+        </div>
+
+        {/* EECP Therapy */}
+        <div className="bg-blue-600 text-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-white">
+          <h2 className="text-2xl font-semibold mb-2">
+            EECP (Enhanced External Counterpulsation)
+          </h2>
+          <p className="leading-relaxed">
+            A non-invasive treatment for chronic angina or heart failure. It
+            works by:
+            <br />
+            <br />
+            Inflating cuffs to boost heart blood flow
+            <br />
+            Promoting collateral circulation
+            <br />
+            Reducing symptoms and improving endurance
+            <br />
+            <br />
+            EECP improves quality of life without surgery or downtime.
+          </p>
+        </div>
+
+        {/* Vascular Ultrasounds */}
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-blue-600">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Arterial, Carotid & Venous Ultrasounds
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Painless, non-invasive imaging to evaluate circulation. We offer:
+            <br />
+            <br />
+            Arterial studies for blockages in limbs
+            <br />
+            Carotid studies to assess stroke risk
+            <br />
+            Venous scans for DVT or insufficiency
+            <br />
+            <br />
+            Accurate diagnostics to guide timely vascular treatment.
+          </p>
+        </div>
+
+        {/* PET/CT Scans */}
+        <div className="bg-blue-600 text-white shadow-lg rounded-2xl p-6 flex flex-col items-start border-l-4 border-white">
+          <h2 className="text-2xl font-semibold mb-2">
+            PET/CT Scans – Cardiac & Cancer Evaluation
+          </h2>
+          <p className="leading-relaxed">
+            Combines functional and anatomical imaging for precise diagnosis. We
+            provide:
+            <br />
+            <br />
+            Cardiac PET/CT for heart perfusion and viability
+            <br />
+            Oncology PET/CT for cancer detection and monitoring
+            <br />
+            Whole-body scans for early detection
+            <br />
+            <br />
+            Cutting-edge PET/CT for informed, personalized treatment.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

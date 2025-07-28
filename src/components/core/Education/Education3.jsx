@@ -2,7 +2,7 @@ import React from "react";
 
 const Education3 = () => {
   return (
-    <div className="bg-blue-800 text-gray-100 py-16 px-6 md:px-12">
+    <div className="bg-blue-800 text-gray-100 py-16  p-3">
       <div className="max-w-4xl mx-auto text-center md:text-left">
         {/* Who Can Benefit Section */}
         <h2 className="text-4xl font-bold mb-6">

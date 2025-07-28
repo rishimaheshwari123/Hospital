@@ -1,7 +1,7 @@
 export default function Diagnostic3() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 bg-gradient-to-r">
-      <h2 className="text-5xl font-extrabold text-gray-900 mb-6 text-center drop-shadow-lg">
+    <div className="max-w-6xl mx-auto  py-12 bg-gradient-to-r">
+      <h2 className="text-3xl lg:text-5xl font-extrabold text-gray-900 mb-6 text-center drop-shadow-lg">
         Condition-Specific Information
       </h2>
       <p className="text-lg text-gray-700 mb-8 text-center italic">
@@ -67,7 +67,7 @@ export default function Diagnostic3() {
       </div>
 
       {/* Healthy Lifestyle Tips */}
-      <h2 className="text-5xl font-extrabold text-gray-900 mt-12 mb-6 text-center drop-shadow-lg">
+      <h2 className="text-3xl lg:text-5xl font-extrabold text-gray-900 mt-12 mb-6 text-center drop-shadow-lg">
         Healthy Lifestyle Tips
       </h2>
       <div className="bg-white shadow-xl rounded-lg p-8 max-w-3xl mx-auto border-l-4 border-green-500 transform transition duration-300 hover:scale-105">

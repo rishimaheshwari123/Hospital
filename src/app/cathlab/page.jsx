@@ -6,13 +6,15 @@ import CathLabProcedure from "@/components/core/CathLabProcedure";
 import CathLabDetails from "@/components/core/CathLabDetails";
 const CathLabPage = () => {
   return (
-    <div className="bg-[#c2f6f5]">
-      <div className="bg-[#c2f6f5] h-40"></div>
+    <div className="bg-[#c2f6f5] p-5">
+      <div className="bg-[#c2f6f5] lg:h-40 h-20"></div>
       <div className="flex  flex-col max-w-7xl mx-auto md:flex-row items-center justify-between ">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <Slide direction="left">
-            <h1 className="text-5xl font-extrabold text-blue-700">Cath Lab</h1>
+            <h1 className="text-3xl lg:text-5xl font-extrabold text-blue-700">
+              Cath Lab
+            </h1>
             <h2 className="text-3xl font-semibold text-gray-800">
               Cardiac Catheterization Laboratory
             </h2>
@@ -61,7 +63,9 @@ const CathLabPage = () => {
           ></div>
         </div>
       </div>
+      <br />
       <CathLabInfo />
+      <br />
       <CathLabProcedure />
       <CathLabDetails />
     </div>

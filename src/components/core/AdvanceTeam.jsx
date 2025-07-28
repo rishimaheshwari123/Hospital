@@ -17,10 +17,6 @@ const teamMembers = [
     name: "Erika Sosa, APRN",
     image: doctor3,
   },
-  {
-    name: "Christina 'Tina' Gillmore, APRN",
-    image: doctor4,
-  },
 ];
 
 const AdvanceTeam = () => {

@@ -33,9 +33,9 @@ const WhyChooseUs = () => {
             </div>
           </div>
           <p className="text-lg font-light">
-            I would recommend anyone that has a vascular problem to Dr. Rajeev.
-            I'm lucky to be alive, and if it wasn't for him, I probably would've
-            died.
+            I would recommend anyone that has a vascular problem to Dr. Ranadive
+            . I'm lucky to be alive, and if it wasn't for him, I probably
+            would've died.
           </p>
           <div className="flex items-center mt-6">
             <img

@@ -6,38 +6,45 @@ import s2 from "@/assets/service2.avif";
 import s3 from "@/assets/service3.avif";
 import s4 from "@/assets/service4.avif";
 import s5 from "@/assets/service5.avif";
+import s6 from "@/assets/rpm.jpg";
 import Link from "next/link";
 
 const treatments = [
   {
-    title: "Interventional Cardiology",
-    desc: "Explore our advanced procedures designed to treat heart conditions effectively and improve your quality of life.",
+    title: "Advanced Cardiac Care Services",
+    desc: "Comprehensive, state-of-the-art treatments for heart conditions, including interventional procedures, heart failure management, and preventive cardiac care.",
     image: s1,
-    link: "interventional-cardiology",
+    link: "AdvancedCardiacCareServices",
   },
   {
-    title: "Diagnostic Services",
-    desc: "Discover our state-of-the-art diagnostic tools that help us accurately assess your heart health and tailor your treatment plan.",
+    title: "Arterial, Venous & Lymphatic Disease Care & Treatments",
+    desc: "Expert diagnosis and treatment of artery, vein, and lymphatic system disorders, including varicose veins, DVT, and peripheral artery disease.",
     image: s2,
-    link: "copy-of-interventional-cardiology",
+    link: "ArterialVenous",
   },
   {
-    title: "Patient Education",
-    desc: "Empower yourself with knowledge! Our resources and programs provide valuable information to help you understand your condition and make informed decisions.",
+    title: "In-Office Advanced Treatments & Diagnostic Imaging",
+    desc: "Convenient access to advanced diagnostic imaging and minimally invasive procedures performed right in our office for faster, more accurate care.",
     image: s3,
-    link: "copy-of-diagnostic-services",
+    link: "InOfficeAdvanced",
   },
   {
-    title: "Preventive Care",
-    desc: "Learn about our preventive strategies that focus on maintaining heart health and reducing the risk of cardiovascular diseases through lifestyle changes and regular check-ups.",
+    title: "Preventive Cardiology",
+    desc: "Preventive care focuses on identifying and managing risk factors before they lead to serious heart conditions. This proactive approach helps you maintain optimal heart health.",
     image: s4,
     link: "copy-of-patient-education",
   },
   {
     title: "Telehealth Services",
-    desc: "Access your care from the comfort of home! Our telehealth services offer virtual consultations for your convenience and safety.",
+    desc: "Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms.",
     image: s5,
     link: "copy-of-patient-education-1",
+  },
+  {
+    title: "RPM, CCM, PCM Services",
+    desc: "Personalized remote care plans including Remote Patient Monitoring (RPM), Chronic Care Management (CCM), and Principal Care Management (PCM) to proactively manage chronic conditions and improve outcomes.",
+    image: s6, // Make sure to define or import s6
+    link: "rpm-ccm-pcm",
   },
 ];
 

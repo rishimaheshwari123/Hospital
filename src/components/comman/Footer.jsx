@@ -120,9 +120,6 @@ const Footer = () => {
             <p className="flex items-center gap-3 justify-center md:justify-start">
               <FaFax className="text-xl" /> (407)-767-9121
             </p>
-            {/* <p className="flex items-center gap-3 justify-center md:justify-start">
-              <FaEnvelope className="text-xl" /> info@yourcompany.com
-            </p> */}
           </div>
         </div>
       </div>
@@ -130,8 +127,8 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-gray-700 text-center text-gray-400">
         <p className="mb-2">
-          &copy; {new Date().getFullYear()} Your Company Name. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Your Orlando Heart & Vascular. All
+          rights reserved.
         </p>
         <p className="flex flex-wrap justify-center space-x-4">
           <span>Developed By Varn</span>

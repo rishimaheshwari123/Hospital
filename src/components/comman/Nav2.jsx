@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   Menu,
-  X,
   Stethoscope,
   FileText,
   Shield,
@@ -24,9 +23,7 @@ import {
   FileCheck,
   Calendar,
   HelpCircle,
-  ChevronDown,
   Heart,
-  Sparkles,
   TrendingUp,
   ArrowRight,
   Headphones,
@@ -35,6 +32,7 @@ import Link from "next/link";
 import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { FaHeartbeat } from "react-icons/fa";
+import { X, ChevronDown, Sparkles, MapPin, Phone } from "lucide-react";
 
 const navItems = [
   {
@@ -113,7 +111,7 @@ const navItems = [
           },
           {
             title: "RPM, CCM, PCM Services",
-            icon: <FaHeartbeat className="w-5 h-5 text-red-600" />,
+            icon: <FaHeartbeat className="w-5 h-5 " />,
             description:
               "Personalized remote care plans including Remote Patient Monitoring (RPM), Chronic Care Management (CCM), and Principal Care Management (PCM) to proactively manage chronic conditions and improve outcomes.",
             href: "/rpm-ccm-pcm",
@@ -135,10 +133,10 @@ const navItems = [
     name: "Patient Education",
     href: "/copy-of-diagnostic-services ",
   },
-  {
-    name: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   name: "Blog",
+  //   href: "/blog",
+  // },
 ];
 
 export const Nav2 = () => {
@@ -452,11 +450,13 @@ export const Nav2 = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {/* Overlay background to prevent clicks on content behind */}
+            {/* Overlay */}
             <div
               className="fixed inset-0 bg-black/50 backdrop-blur-sm"
               onClick={() => setIsMobileMenuOpen(false)}
             />
+
+            {/* Sidebar */}
             <motion.div
               className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl flex flex-col"
               variants={mobileMenuVariants}
@@ -464,6 +464,7 @@ export const Nav2 = () => {
               animate="visible"
               exit="exit"
             >
+              {/* Header */}
               <div className="flex items-center justify-between p-4 border-b flex-shrink-0">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
@@ -480,7 +481,8 @@ export const Nav2 = () => {
                   <X className="w-6 h-6" />
                 </button>
               </div>
-              {/* This div handles the scrolling for the mobile menu content */}
+
+              {/* Content */}
               <div className="p-4 space-y-2 flex-grow overflow-y-auto">
                 {navItems.map((item, index) => (
                   <motion.div
@@ -504,6 +506,7 @@ export const Nav2 = () => {
                             <ChevronDown className="w-4 h-4 text-gray-400" />
                           </motion.div>
                         </button>
+
                         <AnimatePresence>
                           {mobileServicesOpen && (
                             <motion.div
@@ -511,38 +514,34 @@ export const Nav2 = () => {
                               animate={{ opacity: 1, height: "auto" }}
                               exit={{ opacity: 0, height: 0 }}
                               transition={{ duration: 0.3, ease: "easeInOut" }}
-                              // Added max-h-60 and overflow-y-auto to this div
-                              // to make only the sub-services scroll
                               className="pl-4 border-l ml-4 space-y-2 max-h-60 overflow-y-auto custom-scrollbar"
                             >
-                              {item.megaMenuContent.map(
-                                (section, sectionIndex) => (
-                                  <div key={section.title}>
-                                    <h4 className="font-semibold text-gray-800 py-2">
-                                      {section.title}
-                                    </h4>
-                                    <div className="space-y-1">
-                                      {section.categories.map((category) => (
-                                        <Link
-                                          key={category.title}
-                                          href={category.href}
-                                          className="flex items-center p-2 rounded-lg hover:bg-gray-100 transition-colors text-sm text-gray-700"
-                                          onClick={() =>
-                                            setIsMobileMenuOpen(false)
-                                          }
-                                        >
-                                          {category.icon && (
-                                            <span className="mr-2 text-primary">
-                                              {category.icon}
-                                            </span>
-                                          )}
-                                          {category.title}
-                                        </Link>
-                                      ))}
-                                    </div>
+                              {item.megaMenuContent.map((section) => (
+                                <div key={section.title}>
+                                  <h4 className="font-semibold text-gray-800 py-2">
+                                    {section.title}
+                                  </h4>
+                                  <div className="space-y-1">
+                                    {section.categories.map((category) => (
+                                      <Link
+                                        key={category.title}
+                                        href={category.href}
+                                        className="flex items-center p-2 rounded-lg hover:bg-gray-100 transition-colors text-sm text-gray-700"
+                                        onClick={() =>
+                                          setIsMobileMenuOpen(false)
+                                        }
+                                      >
+                                        {category.icon && (
+                                          <span className="mr-2 text-primary">
+                                            {category.icon}
+                                          </span>
+                                        )}
+                                        {category.title}
+                                      </Link>
+                                    ))}
                                   </div>
-                                )
-                              )}
+                                </div>
+                              ))}
                             </motion.div>
                           )}
                         </AnimatePresence>
@@ -560,6 +559,8 @@ export const Nav2 = () => {
                     )}
                   </motion.div>
                 ))}
+
+                {/* Get Started Button */}
                 <motion.div className="pt-4 border-t" variants={itemVariants}>
                   <Link href={"/login"}>
                     <Button
@@ -570,6 +571,42 @@ export const Nav2 = () => {
                       Get Started
                     </Button>
                   </Link>
+                </motion.div>
+
+                {/* Address & Phone Section */}
+                <motion.div
+                  className="pt-6 border-t space-y-4"
+                  variants={itemVariants}
+                >
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-primary mt-1" />
+                    <div className="text-sm text-gray-700 space-y-1">
+                      <p>
+                        450 W. Central Parkway – Altamonte Springs, FL 32714
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-primary mt-1" />
+                    <div className="text-sm text-gray-700 space-y-1">
+                      <p>33 S. Washington Avenue, Apopka, FL 32703</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-primary mt-1" />
+                    <div className="text-sm text-gray-700 space-y-1">
+                      <p>Cath Lab 308 E Hazel St, Orlando, FL 32804</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 text-primary" />
+                    <a
+                      href="tel:4077678554"
+                      className="text-sm text-gray-700 hover:underline"
+                    >
+                      (407) 767-8554
+                    </a>
+                  </div>
                 </motion.div>
               </div>
             </motion.div>

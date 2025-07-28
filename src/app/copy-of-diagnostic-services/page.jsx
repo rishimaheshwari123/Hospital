@@ -6,13 +6,13 @@ import Diagnostic3 from "@/components/core/diagnosticservice/Diagnostic3";
 
 const CopyOfdiagnosticService = () => {
   return (
-    <div className="bg-[#c2f6f5]">
-      <div className="bg-[#c2f6f5] h-40"></div>
+    <div className="bg-[#c2f6f5] p-5">
+      <div className="bg-[#c2f6f5]  h-20 lg:h-40"></div>
       <div className="flex  flex-col max-w-7xl mx-auto md:flex-row items-center justify-between ">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <Slide direction="left">
-            <h1 className="text-5xl font-extrabold text-blue-700">
+            <h1 className="text-3xl lg:text-5xl font-extrabold text-blue-700">
               Patient Education{" "}
             </h1>
 
@@ -63,6 +63,7 @@ const CopyOfdiagnosticService = () => {
         Understanding your heart health is crucial to making the right choices
         for your well-being. Through patient education, we provide you with:
       </p>
+      <br />
       <Diagnostic2 />
       <Diagnostic3 />
     </div>

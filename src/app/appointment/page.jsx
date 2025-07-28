@@ -4,6 +4,7 @@ import { FaLocationDot, FaPhone, FaPaperPlane } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { FaFax } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -83,8 +84,23 @@ const Contact = () => {
             </span>
             <span className="text-gray-700">
               450 W. Central Parkway – Altamonte Springs, FL 32714
-              <br />
+            </span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="p-3 bg-[#00BFB3] text-white rounded-full text-xl">
+              <FaLocationDot />
+            </span>
+            <span className="text-gray-700">
               33 S. Washington Avenue, Apopka, FL 32703
+            </span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="p-3 bg-[#00BFB3] text-white rounded-full text-xl">
+              <FaLocationDot />
+            </span>
+            <span className="text-gray-700">
+              Center for Cardiovascular Excellence - Cath Lab 308 E Hazel St,
+              Orlando, FL 32804
             </span>
           </div>
 
@@ -92,11 +108,13 @@ const Contact = () => {
             <span className="p-3 bg-[#00BFB3] text-white rounded-full text-xl">
               <FaPhone />
             </span>
-            <span className="text-gray-700">
-              (407) 767-8554
-              <br />
-              407-767-9121
+            <span className="text-gray-700">(407) 767-8554</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="p-3 bg-[#00BFB3] text-white rounded-full text-xl">
+              <FaFax />
             </span>
+            <span className="text-gray-700">407-767-9121</span>
           </div>
         </div>
 

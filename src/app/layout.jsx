@@ -3,6 +3,7 @@ import "./globals.css";
 import SubNavbar from "@/components/comman/SubNav";
 import Footer from "@/components/comman/Footer";
 import { Nav2 } from "@/components/comman/Nav2";
+import LiveChat from "@/components/LiveChat";
 
 export default function RootLayout({ children }) {
   return (
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
         <div className="hidden lg:block">
           <SubNavbar />
         </div>
+        <LiveChat />
         {/* <Navbar /> */}
         <Nav2 />
         <div>{children}</div>

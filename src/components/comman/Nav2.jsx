@@ -562,22 +562,9 @@ export const Nav2 = () => {
                   </motion.div>
                 ))}
 
-                {/* Get Started Button */}
-                <motion.div className="pt-4 border-t" variants={itemVariants}>
-                  <Link href={"/login"}>
-                    <Button
-                      className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <Sparkles className="w-4 h-4 mr-2" />
-                      Get Started
-                    </Button>
-                  </Link>
-                </motion.div>
-
                 {/* Address & Phone Section */}
                 <motion.div
-                  className="pt-6 border-t space-y-4"
+                  className="  pt-5 border-t space-y-4"
                   variants={itemVariants}
                 >
                   <div className="flex items-start gap-3">
@@ -609,6 +596,20 @@ export const Nav2 = () => {
                       (407) 767-8554
                     </a>
                   </div>
+                  <br />
+                  <a
+                    href="https://vm.providesupport.com/0gyxfx3vgu2kl0r8e1e9c0m5kz"
+                    className="block w-full bg-[#00BFB3] text-white px-4 py-2 rounded-lg shadow font-semibold text-center"
+                  >
+                    Live Chat
+                  </a>
+
+                  <a
+                    href="tel:4077678554"
+                    className="block w-full bg-[#00BFB3] text-white px-4 py-2 rounded-lg shadow font-semibold text-center mt-3"
+                  >
+                    (407) 767-8554
+                  </a>
                 </motion.div>
               </div>
             </motion.div>

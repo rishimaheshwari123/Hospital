@@ -19,7 +19,7 @@ const InsurancePlans = () => {
 
         <p className="mt-4 text-gray-600">
           Orlando Heart and Vascular's goal is to ensure that our patients are
-          taken care of. That's why we accept ALL forms of insurance, and even
+          taken care of. That's why we accept major forms of insurance, and even
           offer flexible payment plan options for patients who do not have
           insurance.
         </p>

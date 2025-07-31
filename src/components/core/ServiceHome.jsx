@@ -57,7 +57,7 @@ const treatments = [
     image: s11,
   },
   {
-    title: "CCM & PCM ",
+    title: " PCM ",
     image: s12,
   },
 ];

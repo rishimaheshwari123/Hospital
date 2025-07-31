@@ -71,7 +71,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/appointments"
+                href="https://vm.providesupport.com/0gyxfx3vgu2kl0r8e1e9c0m5kz"
                 className="hover:text-gray-300 transition-colors duration-300"
               >
                 Book Appointment

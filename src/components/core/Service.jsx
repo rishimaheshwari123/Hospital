@@ -34,15 +34,15 @@ const treatments = [
     image: s4,
     link: "copy-of-patient-education",
   },
+  // {
+  //   title: "Telehealth Services",
+  //   desc: "Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms.",
+  //   image: s5,
+  //   link: "copy-of-patient-education-1",
+  // },
   {
-    title: "Telehealth Services",
-    desc: "Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms.",
-    image: s5,
-    link: "copy-of-patient-education-1",
-  },
-  {
-    title: "RPM, CCM, PCM Services",
-    desc: "Personalized remote care plans including Remote Patient Monitoring (RPM), Chronic Care Management (CCM), and Principal Care Management (PCM) to proactively manage chronic conditions and improve outcomes.",
+    title: "RPM, PCM Services",
+    desc: "Personalized remote care plans including Remote Patient Monitoring (RPM) and Principal Care Management (PCM) to proactively manage chronic conditions and improve outcomes.",
     image: s6, // Make sure to define or import s6
     link: "rpm-ccm-pcm",
   },

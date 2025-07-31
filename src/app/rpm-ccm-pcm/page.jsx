@@ -20,9 +20,6 @@ export default function HomePage() {
             <div className="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">
               RPM
             </div>
-            <div className="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">
-              CCM
-            </div>
             <div className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
               PCM
             </div>
@@ -33,7 +30,7 @@ export default function HomePage() {
             <span className="text-cyan-600">Compassionate</span> Care
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Our RPM, CCM, and PCM programs are designed to support patients with
+            Our RPM and PCM programs are designed to support patients with
             chronic and complex conditions—especially heart-related
             diseases—through proactive monitoring, continuous care coordination,
             and personalized treatment plans.
@@ -59,7 +56,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* RPM Card */}
             <div className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-cyan-200 hover:shadow-lg transition-all">
               <div className="bg-cyan-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
@@ -94,13 +91,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* CCM Card */}
-            <div className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-teal-200 hover:shadow-lg transition-all">
+            {/*  Card */}
+            {/* <div className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-teal-200 hover:shadow-lg transition-all">
               <div className="bg-teal-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-teal-600" />
               </div>
               <h3 className="text-xl font-bold text-teal-600 mb-2">
-                Chronic Care Management (CCM)
+                Chronic Care Management ()
               </h3>
               <p className="text-gray-600 mb-4">
                 For patients with two or more chronic conditions such as
@@ -124,7 +121,7 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* PCM Card */}
             <div className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-200 hover:shadow-lg transition-all">
@@ -284,7 +281,7 @@ export default function HomePage() {
               👥 Who Is Eligible?
             </h2>
             <p className="text-lg text-gray-600">
-              You may qualify for RPM, CCM, or PCM if you:
+              You may qualify for RPM or PCM if you:
             </p>
           </div>
 

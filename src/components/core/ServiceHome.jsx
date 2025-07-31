@@ -72,12 +72,11 @@ const ServiceHome = () => {
           <span>Our #1 Priority</span>
         </p>
         <p className="w-full md:w-[70%] text-lg md:text-xl text-center md:text-left">
-          Heart and Vascular Care of Georgia is dedicated to providing
-          exceptional cardiovascular care to the rural communities of LaGrange,
-          Newnan, and Warm Springs. With a focus on personalized healing, our
-          experienced specialists deliver compassionate care that goes beyond
-          treating symptoms. Trust us to prioritize your heart and vascular
-          health with expertise and dedication.
+          At Orlando Heart and Vascular, we are committed to providing
+          exceptional cardiovascular care, With a focus on personalized healing,
+          our experienced specialists deliver compassionate care that goes
+          beyond treating symptoms. Trust us to prioritize your heart and
+          vascular health with expertise and dedication.
         </p>
       </div>
 

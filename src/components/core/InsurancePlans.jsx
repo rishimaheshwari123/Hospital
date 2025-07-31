@@ -13,14 +13,15 @@ const InsurancePlans = () => {
     <div className="p-6 py-20 bg-gray-100  flex flex-col items-center">
       <div className="max-w-3xl text-center">
         <p className="text-4xl lg:text-5xl font-bold lg:leading-tight">
-          Accepting ALL <br />
+          Accepting Major <br />
           <span className=" inline-block">Insurance Plans</span>
         </p>
 
         <p className="mt-4 text-gray-600">
-          HAVCOG's goal is to ensure that our patients are taken care of. That's
-          why we accept ALL forms of insurance, and even offer flexible payment
-          plan options for patients who do not have insurance.
+          Orlando Heart and Vascular's goal is to ensure that our patients are
+          taken care of. That's why we accept ALL forms of insurance, and even
+          offer flexible payment plan options for patients who do not have
+          insurance.
         </p>
 
         {/* Tabs */}

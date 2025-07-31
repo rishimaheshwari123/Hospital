@@ -109,13 +109,13 @@ const navItems = [
           //     "Telehealth allows you to meet with your healthcare provider remotely through secure video calls, phone calls, or other digital platforms. ",
           //   href: "/copy-of-patient-education-1",
           // },
-          {
-            title: "RPM, CCM, PCM Services",
-            icon: <FaHeartbeat className="w-5 h-5 " />,
-            description:
-              "Personalized remote care plans including Remote Patient Monitoring (RPM), Chronic Care Management (CCM), and Principal Care Management (PCM) to proactively manage chronic conditions and improve outcomes.",
-            href: "/rpm-ccm-pcm",
-          },
+          // {
+          //   title: "RPM, CCM, PCM Services",
+          //   icon: <FaHeartbeat className="w-5 h-5 " />,
+          //   description:
+          //     "Personalized remote care plans including Remote Patient Monitoring (RPM), Chronic Care Management (CCM), and Principal Care Management (PCM) to proactively manage chronic conditions and improve outcomes.",
+          //   href: "/rpm-ccm-pcm",
+          // },
         ],
       },
     ],

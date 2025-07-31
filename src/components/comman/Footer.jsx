@@ -131,7 +131,7 @@ const Footer = () => {
           rights reserved.
         </p>
         <p className="flex flex-wrap justify-center space-x-4">
-          <span>Developed By Varn</span>
+          <span>Developed By Varn Digihelth</span>
           <Link
             href="/terms-conditions"
             className="hover:text-white transition-colors duration-300"

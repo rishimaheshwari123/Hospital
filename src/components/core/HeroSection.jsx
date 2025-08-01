@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { FaFax } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 
 const HeroSection = () => {
@@ -38,6 +39,13 @@ const HeroSection = () => {
             >
               <FiPhone className="text-lg mt-[2px]" />
               (407) 767-8554
+            </a>
+            <a
+              href="tel:4077678554"
+              className="bg-[#00BFB3] text-center text-white px-6 py-2.5 rounded-md hover:bg-[#00a69b] transition-colors font-medium flex items-center justify-center gap-2"
+            >
+              <FaFax className="text-lg mt-[2px]" />
+              (407)-767-9121
             </a>
           </div>
         </div>

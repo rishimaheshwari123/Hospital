@@ -14,52 +14,63 @@ import s11 from "@/assets/s11.png";
 import s12 from "@/assets/s12.jpg";
 import Link from "next/link";
 const treatments = [
+  // {
+  //   title: "Same Day  Cardiovascular Care and Walk-Ins",
+  //   image: s1,
+  // },
   {
-    title: "Same Day  Cardiovascular Care and Walk-Ins",
-    image: s1,
-  },
-  {
-    title: "Non Invasive Cardiovascular Imaging",
+    title: "Non Invasive Cardiovascular",
     image: s2,
+    link: "NonInvasiveCardiovascular",
   },
   {
     title: "Cardiac and Vascular CT Scans",
     image: s3,
+    link: "CardiacandVascularCTScans",
   },
   {
     title: "Cardiac Stress Testing",
     image: s4,
+    link: "CardiacStressTesting",
   },
+  // {
+  //   title: "Cardiac Arrhythmia Detection Services",
+  //   image: s5,
+  // },
+  // {
+  //   title: "Advanced Cardiac Care Center",
+  //   image: s6,
+  // },
+  // {
+  //   title: "Venous Disease Therapies",
+  //   image: s7,
+  // },
   {
-    title: "Cardiac Arrhythmia Detection Services",
-    image: s5,
-  },
-  {
-    title: "Advanced Cardiac Care Center",
-    image: s6,
-  },
-  {
-    title: "Venous Disease Therapies",
-    image: s7,
-  },
-  {
-    title: "Outpatient Cath Lab Services",
+    title: "Outpatient Cath Lab Services And Hospital Based Procedures",
     image: s8,
-  },
-  { title: "Internal Device Placement", image: s9 },
 
-  {
-    title: "Hospital Based Procedures",
-    image: s10,
+    link: "OutpatientCathLab",
   },
   {
-    title: "Remote Patient Monitoring ",
+    title: "Internal Device Placement",
+    image: s9,
+
+    link: "InternalDevicePlacement",
+  },
+
+  // {
+  //   title: "Hospital Based Procedures",
+  //   image: s10,
+  // },
+  {
+    title: "Remote Patient Monitoring And Principal Care Management",
     image: s11,
+    link: "RemotePatientMonitoring",
   },
-  {
-    title: " PCM ",
-    image: s12,
-  },
+  // {
+  //   title: " PCM ",
+  //   image: s12,
+  // },
 ];
 
 const ServiceHome = () => {
@@ -94,7 +105,7 @@ const ServiceHome = () => {
             <div className="absolute -bottom-8 left-1/2 h-32 -translate-x-1/2 bg-white p-3 rounded-md text-center shadow-md w-[80%]">
               <h2 className="text-lg font-semibold">{treatment.title}</h2>
               <Link
-                href={"/services"}
+                href={`/${treatment?.link}`}
                 className="mt-2 flex mx-auto items-center justify-center gap-2 bg-[#00BFB3] text-white px-4 py-2 rounded-md hover:bg-[#00a69b] transition"
               >
                 Learn More <FaArrowRight />

@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
               "Personalized Approach",
               "Flexible Payments",
               "Cutting-Edge Technology",
-              "Same Day Appointments",
+              // "Same Day Appointments",
               "Healing - Not Just Treating",
             ].map((item, index) => (
               <li key={index} className="flex items-center space-x-3">

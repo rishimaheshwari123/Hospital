@@ -20,6 +20,15 @@ import sy4 from "@/assets/sy4.webp";
 import sy5 from "@/assets/sy5.webp";
 import sy6 from "@/assets/sy6.webp";
 import sy7 from "@/assets/sy7.webp";
+import Hypertension from "@/assets/Hypertension.jpg";
+import Atrial from "@/assets/Atrial.jpg";
+import CoronaryArteryDisease from "@/assets/CoronaryArteryDisease.jpg";
+import CongestiveHeartFailure from "@/assets/CongestiveHeartFailure.jpg";
+import Syncope from "@/assets/Syncope.jpg";
+import Cardiomyopathy from "@/assets/Cardiomyopathy.jpg";
+import Amyloidosis from "@/assets/Amyloidosis.jpg";
+import tachycardia from "@/assets/tachycardia.png";
+import bradycardia from "@/assets/bradycardia.png";
 import Image from "next/image";
 
 const work = [
@@ -30,6 +39,15 @@ const work = [
   { id: 5, image: sy5, teg: "Heart Palpitations" },
   { id: 6, image: sy6, teg: "Skin Discoloration" },
   { id: 7, image: sy7, teg: "Purple Streaks on Legs" },
+  { id: 8, image: Hypertension, teg: "Hypertension" },
+  { id: 9, image: Atrial, teg: "Atrial Fibrillation" },
+  { id: 10, image: CoronaryArteryDisease, teg: "Coronary Artery Disease" },
+  { id: 188, image: CongestiveHeartFailure, teg: "Congestive Heart Failure" },
+  { id: 11, image: Syncope, teg: "Syncope" },
+  { id: 12, image: Cardiomyopathy, teg: "Cardiomyopathy" },
+  { id: 13, image: Amyloidosis, teg: "Amyloidosis" },
+  { id: 14, image: tachycardia, teg: "Tachycardia" },
+  { id: 15, image: bradycardia, teg: "Bradycardia" },
 ];
 
 const Symtomps = () => {
